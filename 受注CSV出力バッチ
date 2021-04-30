@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-30T05:59:32.857Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="8EjBJ1UIEOZGAinI7QJQ" version="14.5.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-30T06:42:35.507Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="20FKxAuiEEUAAn_oG51x" version="14.5.7" type="github">
   <diagram id="H-cOdyGd7a4VrqNQHK3g" name="Page-1">
     <mxGraphModel dx="876" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -14,7 +14,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="KCDJdN_GZAzKVCQ8JBW0-1" value="START" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="62.5" y="10" width="90" height="30" as="geometry" />
+          <mxGeometry x="62.5" y="20" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KCDJdN_GZAzKVCQ8JBW0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KCDJdN_GZAzKVCQ8JBW0-2" target="KCDJdN_GZAzKVCQ8JBW0-3">
           <mxGeometry relative="1" as="geometry" />
@@ -80,7 +80,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="400" y="470" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="400" y="335" />
+              <mxPoint x="400" y="345" />
               <mxPoint x="400" y="460" />
             </Array>
           </mxGeometry>
@@ -129,8 +129,8 @@
             <mxPoint x="480" y="40" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KCDJdN_GZAzKVCQ8JBW0-44" value="&lt;font style=&quot;font-size: 14px&quot;&gt;①前処理&lt;br&gt;tmpのファイル削除。&lt;br&gt;&lt;br&gt;②対象受注取得&lt;br&gt;対象となる受注データを取得する。&lt;br&gt;【対象】&lt;br&gt;・設定ファイル日時〜現在日時 -2分&lt;br&gt;・受注状態：商品準備中&lt;br&gt;・未キャンセル&lt;br&gt;・未保留&lt;br&gt;&lt;br&gt;受注データ出力テーブルに存在しない&lt;br&gt;対象となる受注データが存在しない場合、空ファイルを作成する。&lt;br&gt;&lt;br&gt;③受注データ追加&lt;br&gt;受注データ出力テーブルの追加。&lt;br&gt;&lt;br&gt;④受注レコード出力&lt;br&gt;受注CSVレコードを生成し、tmpに出力する。&lt;br&gt;&lt;br&gt;⑤CSVをdataへ送信&lt;br&gt;tmpに出力した受注データをdataへ送信する。&lt;br&gt;&lt;br&gt;⑥CSVをbackupへ送信&lt;br&gt;tmpに出力した受注データをbackupへ送信する。&lt;br&gt;&lt;br&gt;⑦後処理&lt;br&gt;tmpのファイルを削除。&lt;br&gt;正常/異常メール送信。&lt;br&gt;【正常メール情報】&lt;br&gt;・処理件数&lt;br&gt;・ファイル名&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="500" y="40" width="310" height="680" as="geometry" />
+        <mxCell id="KCDJdN_GZAzKVCQ8JBW0-44" value="&lt;font style=&quot;font-size: 14px&quot;&gt;①前処理&lt;br&gt;　tmpのファイル削除。&lt;br&gt;&lt;br&gt;②対象受注取得&lt;br&gt;　対象となる受注データを取得する。&lt;br&gt;　【対象】&lt;br&gt;　・設定ファイル日時〜現在日時 -2分&lt;br&gt;　・受注状態：商品準備中&lt;br&gt;　・未キャンセル&lt;br&gt;　・未保留&lt;br&gt;&lt;br&gt;受注データ出力テーブルに存在しない&lt;br&gt;　対象となる受注データが存在しない場合、空ファイルを作成する。&lt;br&gt;&lt;br&gt;③受注データ追加&lt;br&gt;　受注データ出力テーブルの追加。&lt;br&gt;&lt;br&gt;④受注レコード出力&lt;br&gt;　受注CSVレコードを生成し、tmpに出力する。&lt;br&gt;&lt;br&gt;⑤CSVをdataへ送信&lt;br&gt;　tmpに出力した受注CSVをdataへ送信する。&lt;br&gt;&lt;br&gt;⑥CSVをbackupへ送信&lt;br&gt;　tmpに出力した受注CSVをbackupへ送信する。&lt;br&gt;&lt;br&gt;⑦後処理&lt;br&gt;　tmpのファイルを削除。&lt;br&gt;　正常/異常メール送信。&lt;br&gt;　【正常メール情報】&lt;br&gt;　・処理件数&lt;br&gt;　・ファイル名&lt;br&gt;&lt;br&gt;異常終了時の挙動&lt;br&gt;　全件ロールバック、異常メール送信&lt;br&gt;　【考えられるケース】&lt;br&gt;　　・tmp、data、backupフォルダが存在しない&lt;br&gt;　　・テーブルがロックされている&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="320" height="680" as="geometry" />
         </mxCell>
         <mxCell id="KCDJdN_GZAzKVCQ8JBW0-46" value="ループ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="20" y="200" width="70" height="20" as="geometry" />
@@ -140,6 +140,9 @@
         </mxCell>
         <mxCell id="KCDJdN_GZAzKVCQ8JBW0-53" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="411" y="438" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KCDJdN_GZAzKVCQ8JBW0-56" value="&lt;font style=&quot;font-size: 14px&quot;&gt;制約事項&lt;br&gt;・管理画面の実装は対象外とする。（レポート機能、手動起動なし）&lt;br&gt;・ログ出力 及び 共通化は、優先度低で対応する。（工数の関係）&lt;br&gt;・ファイル出力は、HIT-MALL共通サーバとする。（外部出力しない）&lt;br&gt;&lt;br&gt;懸念点&lt;br&gt;・ローカルフォルダ作成&lt;br&gt;・ステージフォルダ作成&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="42.5" y="760" width="737.5" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
